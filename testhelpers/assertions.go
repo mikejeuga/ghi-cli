@@ -28,7 +28,7 @@ func AssertNoError(t *testing.T, err error) {
 
 func AssertError(t *testing.T, err error) {
 	t.Helper()
-	if err == nil {
+	if err != nil {
 		t.Errorf("We were expecting an error: %v", err)
 	}
 }
