@@ -23,7 +23,7 @@ We want to make a GH issue for code reviews
 ## It is fun`
 
 		err := issue.WriteBody("init")
-		testhelpers.AssertError(t, err)
+		testhelpers.AssertNoError(t, err)
 		testhelpers.AssertEqual(t, issue.Body, body)
 	})
 
